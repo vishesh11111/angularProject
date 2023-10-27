@@ -1,0 +1,16 @@
+<div>
+  <!-- get variable from  navbar.component.ts which is already define-->
+  <h1>{{ msg }}</h1>
+  <!-- for map array use by ngFor and navs is already define inside navbar.component.ts -->
+  <!-- for navigate other component put routerLink and other -->
+  <ul class="navbar-01" *ngFor="let nav of navs">
+    <li>
+      <a routerLink="/{{ nav | lowercase }}">
+        {{ nav }}
+      </a>
+    </li>
+  </ul>
+  <!--  ////// call funtion from  navbar.component.ts which is already define-->
+  <!-- <p>{{ showData() }}</p>
+  <button (click)="changeMsg()">change msg</button> -->
+</div>
